@@ -7,13 +7,13 @@ from datetime import timedelta
 
 # Load model and encoders
 
-model_path = 'model/rf_model.pkl'
-encoders_path = 'model/label_encoders.pkl'
+model_path = 'Model/rf_model.pkl'
+encoders_path = 'Model/label_encoders.pkl'
 model = joblib.load(model_path)
 label_encoders = joblib.load(encoders_path)
 
 # Load the dataframe
-file_path = 'data/Flight_Fare.xlsx'
+file_path = 'Data/Flight_Fare.xlsx'
 df = pd.read_excel(file_path)
 
 # Function to filter dropdown values
